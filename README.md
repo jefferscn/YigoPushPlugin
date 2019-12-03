@@ -67,3 +67,57 @@
 ### 百度推送
 
     由于暂时没有办法申请应用，所以文档缺失
+
+## 调用方式
+
+### InvokeService
+
+    提供了名为PushService的RemoteService
+
+* PushToAll
+
+    1. title
+    2. message
+
+    ```javascript
+    InvokeService("PushService", false, false, "PushToAll", "Test", "Test")
+    ```
+
+* PushToUser
+
+    1. 用户的Id
+    2. title
+    3. message
+    ```javascript
+    InvokeService("PushService", false, false, "PushToUser", 21, "Test", "Test")
+    ```
+
+* PushToAllOnline
+
+    1. title
+    2. message
+    ```javascript
+    InvokeService("PushService", false, false, "PushToAllOnline", "Test", "Test")
+    ```
+### 服务端
+
+#### YIGO服务端公式
+
+* PushToUser
+
+    1. 用户的Id
+    2. title
+    3. message
+
+* PushToAll
+
+    1. title
+    2. message
+
+* PushToAllOnline
+
+    1. title
+    2. message
+
+### Java直接调用
+
