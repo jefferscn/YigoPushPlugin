@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Enhance>
+   <ExtService>
+	  <Service Name="PushService" Description="推送服务" Impl="com.bokesoft.yigo.service.pushservice.PushService"/>
+   </ExtService>
+   <ExtMidFunction>
+      <MidFunction Description="推送服务器函数" Provider="com.bokesoft.yigo.service.pushservice.PushServiceFunctionProvider"/>
+   </ExtMidFunction>
+</Enhance>

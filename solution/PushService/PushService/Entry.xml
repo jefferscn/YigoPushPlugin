@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entry Caption="根" Key="root">
+    <Entry Caption="系统设置" Key="System"/>
+    <Entry Caption="工作流" Icon="Bill.png" Key="workflow">
+        <EntryItem Caption="待办事宜" FormKey="ToDoList" Key="ToDoList" Type="Form"/>
+        <EntryItem Caption="代理设置" FormKey="Delegate" Key="NewItem" Type="Form"/>
+    </Entry>
+    <Entry Caption="公共配置自定义表单" Icon="Bill.png" Key="CommonCustomBill">
+        <EntryItem Caption="推送测试" FormKey="PushTest" Key="PushTest" Media="WEB,PC,IOS,ANDROID," Type="Form"/>
+    </Entry>
+</Entry>

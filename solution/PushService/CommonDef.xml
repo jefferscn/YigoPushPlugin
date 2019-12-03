@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CommonDef>
+	<OperationCollection>
+        <Operation Key="WFLog" Caption="审批记录">
+            <Action>
+                <![CDATA[ShowModal('WFLog', {
+            pOID:{GetOID()},
+            processKey:{GetProcessKey()},
+            processVer:{GetProcessVer()}
+                    })]]>
+            </Action>
+        </Operation>
+    </OperationCollection>
+    <ScriptCollection>
+        <Script Key="Load" Caption="载入" Description="载入事件" Range="Action" Verb="Load">
+            <![CDATA[
+				LoadData()
+			]]>	
+        </Script>
+        <Script Key="Save" Caption="保存" Description="保存事件" Range="Action" Verb="Save">
+            <![CDATA[
+				SaveData()
+			]]>	
+        </Script>
+    </ScriptCollection>
+</CommonDef>

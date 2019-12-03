@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DataObject Key="PushDevice" Caption="推送设备注册表" PrimaryType="Entity" Version="2">
+    <TableCollection>
+        <Table Key="PushDevice" Caption="推送设备注册表">
+            <Column Key="OID" Caption="对象标识" DataType="Long"/>
+            <Column Key="SOID" Caption="主对象标识" DataType="Long"/>
+            <Column Key="POID" Caption="父对象标识" DataType="Long"/>
+            <Column Key="VERID" Caption="对象版本" DataType="Integer"/>
+            <Column Key="DVERID" Caption="对象明细版本" DataType="Integer"/>
+            <Column Key="DEVICE" Caption="设备Id" DataType="Varchar"/>
+            <Column Key="USER" Caption="用户Id" DataType="Long"/>
+            <Column Key="PUSHTYPE" Caption="推送类型" DataType="Varchar"/>
+            <Column Key="DEVICETYPE" Caption="设备类型" DataType="Varchar" DefaultValue=""/>
+        </Table>
+    </TableCollection>
+</DataObject>
