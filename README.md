@@ -52,6 +52,52 @@
 
     打包网站已经集成了百度推送和极光推送的插件，可以自行到打包网站进行设置
 
+### 客户端框架
+
+    暂时只支持update这个branch,如果使用其他版本，请按照如下步骤进行集成
+
+* clone update branch
+
+    执行命令
+    ```bash
+    git clone -b update https://github.com/jefferscn/yes-framework.git
+    ```
+
+* 复制src\push
+    把这个目录复制到项目的src目录下
+
+* 修改config.js增加push初始化代码
+
+    在引入代码部分加入
+    ```javascript
+    import { init as initPush } from './push';
+    ```
+    在后面执行一下
+    ```javascript
+    initPush();
+    ```
+    
+### project.json
+
+    project.json中增加对baidu和极光推送的支持
+
+* baidupush
+
+    一个Object，包含一个apiKey的属性
+
+```
+    "baidupush": {
+        "apiKey": "ZMI5WqsClmocGngGEklykT56"
+    }
+```
+* jpush
+
+    是一个Boolean值
+
+```
+    "jpush": true,
+```
+
 ### 极光推送
 
     极光推送的IOS配置中支持开发和正式两个证书，由于当前打包网站不支持开发方式打包，所以只需要上传正式的证书
@@ -120,4 +166,6 @@
     2. message
 
 ### Java直接调用
+
+    TODO::
 
